@@ -50,6 +50,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Portfolio',
+    welcomeMessage: 'some details of little shits i have done'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     error: 'hangover',
